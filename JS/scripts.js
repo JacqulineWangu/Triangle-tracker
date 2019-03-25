@@ -16,7 +16,7 @@ var a = sorted[0]
 var b = sorted[1]
 var c = sorted[2]
 
-var length = a + b
+var lengthab = a + b
 
 var respond;
 
@@ -34,6 +34,6 @@ respond = 'EQUILATERAL TRIANGLE'
   respond = 'SCALENE TRIANGLE'
 }else { respond = "Invalid measurements. Kindly re-evaluate your figures."};
 
-document.querySelector("#result").innerHTML = respond
+document.querySelector("#Answer").innerHTML = respond
 
 }
