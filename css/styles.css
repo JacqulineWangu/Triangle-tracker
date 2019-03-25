@@ -71,3 +71,8 @@ body {
   line-height: 50px;
   color: red;
 }
+body{
+  font-size: 20;
+  font-weight: 30;
+  font-stretch: expanded;
+}
