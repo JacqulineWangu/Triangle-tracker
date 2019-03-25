@@ -19,3 +19,13 @@ var c = sorted[2]
 var length = a + b
 
 var respond;
+
+if(lengthab < c){
+  respond = "ERROR! Not a triangle"
+}
+else if(a === b && b === c && a > 0 && b > 0 && c > 0){console.log('Equilateral TRIANGLE')
+respond = 'EQUILATERAL TRIANGLE'
+}else if(a === b && b !== c || a !== b && b === c && a > 0 && b > 0 && c > 0){
+  console.log('SCALENE TRIANGLE')
+  respond = 'SCALENE TRIANGLE'
+}else if(a === b && b !== c || a !== b && b === c && a > 0 && b > 0 && c > 0){}
