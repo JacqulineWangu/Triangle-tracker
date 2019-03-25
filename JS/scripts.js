@@ -32,6 +32,8 @@ respond = 'EQUILATERAL TRIANGLE'
 }else if(a !== b && b !== c && (Number.isInteger(a) === true || Number.isInteger(b) === true || Number.isInteger(C) === true) && a > 0 && b > 0 && c > 0){
   console.log('SCALENE TRIANGLE')
   respond = 'SCALENE TRIANGLE'
-}
+}else { respond = "Invalid measurements. Kindly re-evaluate your figures."};
+
+document.querySelector("#result").innerHTML = respond
 
 }
