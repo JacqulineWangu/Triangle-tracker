@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <button><a href="Triangle.html">PAGE DOWN</a></button>
+  <button onclick="scrolldown()">PAGE DOWN</button>
 
   <p>A triangle is a closed figure made up of three line segments.</p>
 
@@ -27,11 +27,18 @@
     <li>The interior angles of a triangle always add up to 180°</li>
     <li>The exterior angles of a triangle always add up to 360°</li>
   </ul>
+  <style media="screen">
+    body {
+      margin: 0;
+      background-image: url("./images/528332.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 900px;
+      size: cover;
+    }
+  </style>
     <p>And of the <strong>trilateral figures</strong>: an <strong>equilateral triangle</strong> is that having three equal sides, an <strong>isosceles</strong> (triangle) that having only two equal sides, and a <strong>scalene</strong> (triangle)
       that having three unequal sides.</p>
-    <img src="images/equilateraltriangle.png">
-    <img src="images/isoscelestriangle.png">
-    <img src="images/scalenetriangle.png">
 <p><strong><em> WELCOME TO RAYB'S TRIANGLE-TRACKER.HELPS YOU DETECT THE TYPE OF TRIANGLE YOU ARE ABOUT TO CONSTRUCT BY KEYING IN THE MEASUREMENTS AND RUN, THE RESULTS DISPLAYED IS THE TYPE OF TRIANGLE DESCRIBED BY YOUR MEASUREMENTS....
   FEEL FREE AND HAVE LOTS OF FUN!!</strong></em></P>
   <ul>
@@ -39,10 +46,11 @@
     <li>side B: <input type="texts" id="sideB"></li>
     <li>side C: <input type="texts" id="sideC"></li>
   </ul>
-<button type="button" onClick="calc()">RUN</button>
+<button onClick="calc()">RUN</button>
 <p id="Answer"></p>
     <button><a href="home.html">GO BACK</a></button>
 
 </body>
 <script src="JS/scripts.js"></script>
+
 </html>

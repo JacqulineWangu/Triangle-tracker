@@ -1,40 +1,29 @@
 function calc() {
-  var a = parseFloat(document.querySelector("#sideA").value);
-  var b = parseFloat(document.querySelector("#sideB").value);
-  var c = parseFloat(document.querySelector("#sideC").value);
+  var a = parseInt(document.querySelector("#sideA").value);
+  var b = parseInt(document.querySelector("#sideB").value);
+  var c = parseInt(document.querySelector("#sideC").value);
 
+  var respond = document.querySelector("#Answer");
 
-// var ab = lengthA.concat(lengthB);
-//
-// var abc = ab.concat(lengthC);
+  if (a + b > c && b + c > a && a + c > b) {
+    if (a === b && b === c && a > 0 && b > 0 && c > 0) {
 
-// var sorted = abc.sort(function(d, e)
-// return d - e;
-})
+      respond.innerHTML = 'EQUILATERAL TRIANGLE';
+    } else if (a === b && b !== c || a !== b && b === c && a > 0 && b > 0 && c > 0) {
 
-// var a = sorted[0]
-// var b = sorted[1]
-// var c = sorted[2]
+      respond.innerHTML = 'ISOSCELES TRIANGLE';
+    } else if (a !== b && b !== c && c !== a) {
 
-var ab = a + b
-
-var respond = document.querySelector("#Answer");
-
-if(ab < c){
-  respond.innerHTML = "ERROR! Not a triangle";
+      respond.innerHTML = 'SCALENE TRIANGLE';
+    }
+  }
+  else if (isNaN(a) || isNaN(b) || isNaN(c)){
+    respond.innerHTML = 'Not a number';
+  }else {
+    respond.innerHTML = 'NOT A TRIANGLE';
+  }
 }
-else if(a === b && b === c && a > 0 && b > 0 && c > 0){
-  console.log('EQUILATERAL TRIANGLE')
-respond.innerHTML= 'EQUILATERAL TRIANGLE';
-}
-else if(a === b && b !== c || a !== b && b === c && a > 0 && b > 0 && c > 0){
-  console.log('ISOSCELES TRIANGLE')
-  respond.innerHTML = 'ISOSCELES TRIANGLE';
-}
-else if(a !== b && b !== c && (Number.isInteger(a) === true || Number.isInteger(b) === true || Number.isInteger(C) === true) && a > 0 && b > 0 && c > 0){
-  console.log('SCALENE TRIANGLE')
-  respond.innerHTML = 'SCALENE TRIANGLE';
-}
-else {
-respond = "Invalid measurements. Kindly re-evaluate your figures."
+
+function scrolldown() {
+  window.scrollBy(0, 300);
 }
