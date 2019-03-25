@@ -22,4 +22,4 @@ Tool and languages used in creating this app are:
 Icase of any difficulties kindly contact +254 707518860 or email jacqulinewangu@gmail.com.
 ### License
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) {year} **{List of contributors or company name}**
+Copyright (c) {2019} **{RAYB'S DEVELOPER COMPANY}**
