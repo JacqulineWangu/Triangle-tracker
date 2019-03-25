@@ -2,19 +2,23 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <meta charset="utf-8">
   <title></title>
 </head>
 
 <body>
+<div class="but">
   <button onclick="scrolldown()">PAGE DOWN</button>
-
-  <p>A triangle is a closed figure made up of three line segments.</p>
-
-  <p>A triangle is a polygon with three edges and three vertices.</p>
-  <p>It is one of the basic shapes in geometry.</p>
-  <p>A triangle with vertices A, B, and C is denoted.</p>
+</div>
+  <div class="page">
+<ul>
+    <li>A triangle is a closed figure made up of three line segments.</li>
+    <li>A triangle is a polygon with three edges and three vertices.</li>
+    <li>It is one of the basic shapes in geometry.</li>
+    <li>A triangle with vertices A, B, and C is denoted.</li>
+</ul>
+  </div>
 
   <ol>
     <li><em><strong>Equilateral triangles</strong></em> are triangles in which all three sides are the same length.</li>
@@ -30,10 +34,10 @@
   <style media="screen">
     body {
       margin: 0;
-      background-image: url("./images/528332.jpg");
+      background-image: url("./images/white.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      height: 900px;
+      height: 100%;
       size: cover;
     }
   </style>
@@ -41,18 +45,21 @@
       that having three unequal sides.</p>
 <p><strong><em> WELCOME TO RAYB'S TRIANGLE-TRACKER.HELPS YOU DETECT THE TYPE OF TRIANGLE YOU ARE ABOUT TO CONSTRUCT BY KEYING IN THE MEASUREMENTS AND RUN, THE RESULTS DISPLAYED IS THE TYPE OF TRIANGLE DESCRIBED BY YOUR MEASUREMENTS....
   FEEL FREE AND HAVE LOTS OF FUN!!</strong></em></P>
-<div>
+<div class="mains">
   <ul>
-    <li>side A: <input type="texts" id="sideA"></li>
-    <li>side B: <input type="texts" id="sideB"></li>
-    <li>side C: <input type="texts" id="sideC"></li>
+    <P>SIDE A: <input type="texts" id="sideA"></P>
+    <P>SIDE B: <input type="texts" id="sideB"></P>
+    <P>SIDE C: <input type="texts" id="sideC"></P>
   </ul>
-</div>
+<div class="but">
 <button onClick="calc()">RUN</button>
+</div>
 <p id="Answer"></p>
+<div class="but">
     <button><a href="home.html">GO BACK</a></button>
-
+</div>
+</div>
 </body>
 <script src="JS/scripts.js"></script>
-
+</div>
 </html>

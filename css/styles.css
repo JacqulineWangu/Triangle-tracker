@@ -5,16 +5,19 @@ h1 {
 
 p {
   font-family: sans-serif;
-  colour: white;
+  margin-left: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-right: 80px;
 }
 
 ul {
-  line-height: 70px;
+  line-height: 30px;
+  margin-left: 50px;
 }
 
 body {
   margin: 0;
-  background-color: red;
   background-image: url('back.gif');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -57,24 +60,41 @@ body {
   display: block;
 }
 
+.sidenav a {
+  font-size: 18px;
+}
+.mains{
+text-align-last: center;
+list-style: none;
+font-size: 40px;
+font-weight: bolder;
+font-stretch: extra-expanded;
+font-family: monospace;
+}
+
+#Answer {
+line-height: 50px;
+color: purple;
+}
+.body p {
+font-size: 80px;
+font-weight: 80px;
+font-stretch: expanded;
+text-align: center;
+}
+.page {
+  line-height: 20px;
+}
+ol {
+  line-height: 40px;
+  margin-left: 50px;
+}
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
   }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-div{
-  position: relative;
-}
-
-#Answer {
-  line-height: 50px;
-  color: red;
-}
-body{
-  font-size: 20;
-  font-weight: 30;
-  font-stretch: expanded;
+.but {font-size: 40px;
+font-weight: bolder;
+font-stretch: extra-expanded;
+font-family: monospace;
 }
