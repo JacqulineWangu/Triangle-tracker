@@ -25,5 +25,5 @@ function calc() {
 }
 
 function scrolldown() {
-  window.scrollBy(0, 300);
+  window.scrollBy(0, 900);
 }
