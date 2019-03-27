@@ -48,7 +48,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: #GREY;
+  color: #gold;
 }
 
 .sidenav a {
@@ -93,8 +93,8 @@ ol {
   .sidenav {
     padding-top: 15px;
   }
-.but {font-size: 40px;
+.but {font-size: 20px;
 font-weight: bolder;
-font-stretch: extra-expanded;
+font-stretch: expanded;
 font-family: monospace;
 }
